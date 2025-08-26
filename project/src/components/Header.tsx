@@ -1,5 +1,11 @@
-import React, { useState } from 'react';
-import { Menu, X, Newspaper as News, Trophy, MessageCircle } from 'lucide-react';
+import React, { useState } from "react";
+import {
+  Menu,
+  X,
+  Newspaper as News,
+  Trophy,
+  MessageCircle,
+} from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,19 +14,35 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // .header {
+  //         background: linear-gradient(
+  //           135deg,
+  //           var(--primary-pink),
+  //           var(--secondary-cyan)
+  //         );
+  //         color: white;
+  //         padding: 1rem 0;
+  //         position: fixed;
+  //         width: 100%;
+  //         top: 0;
+  //         z-index: 1000;
+  //         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  //       }
+
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50">
+    <header className="bg-gradient-to-r from-pink-500 to-cyan-400 text-white shadow-lg sticky top-0 z-50">
+      {/* <header className="bg-white shadow-lg sticky top-0 z-50"> */}
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img 
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZeUljHpFtXhOn9qNUQLLfNL0-iHz25WhumdyniEzBXekR8hK0j1OPSFUwOcGMpF-F9Sc&usqp=CAU" 
-              alt="MTB SERIES MDQ" 
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZeUljHpFtXhOn9qNUQLLfNL0-iHz25WhumdyniEzBXekR8hK0j1OPSFUwOcGMpF-F9Sc&usqp=CAU"
+              alt="MTB SERIES MDQ"
               className="h-12 w-12 object-contain rounded-lg"
             />
             <div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-cyan-400 bg-clip-text text-transparent">
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-cyan-400 bg-clip-text text-transparent text-white">
                 MTB SERIES MDQ
               </h1>
               <p className="text-sm text-gray-600">Mountain Bike Racing</p>
@@ -29,15 +51,24 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#inicio" className="flex items-center space-x-2 text-gray-700 hover:text-pink-500 transition-colors duration-300">
+            <a
+              href="#inicio"
+              className="flex items-center space-x-2 text-white-700 hover:text-pink-500 transition-colors duration-300"
+            >
               <Trophy size={18} />
               <span>Inicio</span>
             </a>
-            <a href="#noticias" className="flex items-center space-x-2 text-gray-700 hover:text-cyan-500 transition-colors duration-300">
+            <a
+              href="#noticias"
+              className="flex items-center space-x-2 text-white-700 hover:text-cyan-500 transition-colors duration-300"
+            >
               <News size={18} />
               <span>Noticias</span>
             </a>
-            <a href="#comentarios" className="flex items-center space-x-2 text-gray-700 hover:text-cyan-500 transition-colors duration-300">
+            <a
+              href="#comentarios"
+              className="flex items-center space-x-2 text-white-700 hover:text-cyan-500 transition-colors duration-300"
+            >
               <MessageCircle size={18} />
               <span>Comentarios</span>
             </a>
@@ -56,15 +87,24 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 animate-slide-down">
             <nav className="flex flex-col space-y-4">
-              <a href="#inicio" className="flex items-center space-x-2 text-gray-700 hover:text-pink-500 transition-colors">
+              <a
+                href="#inicio"
+                className="flex items-center space-x-2 text-white-700 hover:text-pink-500 transition-colors"
+              >
                 <Trophy size={18} />
                 <span>Inicio</span>
               </a>
-              <a href="#noticias" className="flex items-center space-x-2 text-gray-700 hover:text-cyan-500 transition-colors">
+              <a
+                href="#noticias"
+                className="flex items-center space-x-2 text-white-700 hover:text-cyan-500 transition-colors"
+              >
                 <News size={18} />
                 <span>Noticias</span>
               </a>
-              <a href="#comentarios" className="flex items-center space-x-2 text-gray-700 hover:text-cyan-500 transition-colors">
+              <a
+                href="#comentarios"
+                className="flex items-center space-x-2 text-white-700 hover:text-cyan-500 transition-colors"
+              >
                 <MessageCircle size={18} />
                 <span>Comentarios</span>
               </a>
