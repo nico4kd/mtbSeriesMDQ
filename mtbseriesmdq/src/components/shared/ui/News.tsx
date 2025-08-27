@@ -1,5 +1,6 @@
 import React from "react";
 import { Calendar, User, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const News = () => {
   const newsItems = [
@@ -64,10 +65,12 @@ const News = () => {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src={news.image}
                   alt={news.title}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                  width={500}
+                  height={500}
                 />
                 <div className="absolute top-4 left-4">
                   <span className="bg-gradient-to-r from-pink-500 to-cyan-400 text-white px-3 py-1 rounded-full text-sm font-semibold">
