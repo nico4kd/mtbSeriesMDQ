@@ -25,7 +25,7 @@ const Footer = () => {
                 <h3 className="text-2xl font-bold bg-gradient-to-r from-pink-400 to-cyan-300 bg-clip-text text-transparent">
                   MTB SERIES MDQ
                 </h3>
-                <p className="text-gray-400">Mountain Bike Racing</p>
+                {/* <p className="text-gray-400">La carrera.</p> */}
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed mb-6">
@@ -35,22 +35,10 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
-                className="bg-pink-500 p-3 rounded-full hover:bg-pink-600 transition-colors duration-300"
-              >
-                <Facebook size={20} />
-              </a>
-              <a
-                href="#"
+                href="https://www.instagram.com/mtbseriesmdq"
                 className="bg-cyan-500 p-3 rounded-full hover:bg-cyan-600 transition-colors duration-300"
               >
                 <Instagram size={20} />
-              </a>
-              <a
-                href="#"
-                className="bg-pink-500 p-3 rounded-full hover:bg-pink-600 transition-colors duration-300"
-              >
-                <Twitter size={20} />
               </a>
             </div>
           </div>
@@ -69,6 +57,14 @@ const Footer = () => {
               </li>
               <li>
                 <a
+                  href="#puntos_inscripcion"
+                  className="text-gray-300 hover:text-cyan-400 transition-colors duration-300"
+                >
+                  Puntos de Inscripción
+                </a>
+              </li>
+              <li>
+                <a
                   href="#noticias"
                   className="text-gray-300 hover:text-cyan-400 transition-colors duration-300"
                 >
@@ -77,10 +73,10 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#comentarios"
+                  href="#sponsors"
                   className="text-gray-300 hover:text-cyan-400 transition-colors duration-300"
                 >
-                  Comentarios
+                  Sponsors
                 </a>
               </li>
             </ul>
@@ -90,10 +86,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-6">Contacto</h4>
             <div className="space-y-4">
-              <div className="flex items-center space-x-3">
+              {/* <div className="flex items-center space-x-3">
                 <Mail className="text-pink-400" size={18} />
                 <span className="text-gray-300">info@mtbseriesmdq.com</span>
-              </div>
+              </div> */}
               <div className="flex items-center space-x-3">
                 <Phone className="text-cyan-400" size={18} />
                 <span className="text-gray-300">+54 9 223 519 2080</span>
